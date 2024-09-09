@@ -129,3 +129,22 @@ footer {
         flex-direction: column;
     }
 }
+
+
+/* Loading and Detection Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#uploadStatus, #detectionStatus {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d35400;
+    animation: pulse 1s infinite;
+}
+
+.hidden {
+    display: none;
+}

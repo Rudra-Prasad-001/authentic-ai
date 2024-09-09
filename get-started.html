@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Satya AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#how-it-works">how-it-works</a></li>
+                <li><a href="index.html#features">features</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+                <li class="right"><a href="index.html#learn-more">Learn More</a></li>
+                <li class="right"><a href="index.html#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="main-section">
+        <h1>Get Started with Satya AI</h1>
+        <p>Upload your video or image to detect deep fakes.</p>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*, video/*" required>
+            <button type="submit" class="btn-primary">Submit</button>
+            <button type="button" id="detectButton" class="btn-secondary" style="display: none;">Detect</button>
+        </form>
+        <div id="uploadStatus" class="hidden">Uploading...</div>
+        <div id="detectionStatus" class="hidden">Detecting...</div>
+        <div id="result" class="hidden"></div>
+    </section>
+
+</body>
+</html>
