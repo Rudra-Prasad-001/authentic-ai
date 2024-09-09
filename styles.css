@@ -1,0 +1,132 @@
+/* styles.css */
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #f7d68c;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1%;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333;
+}
+
+.navbar li.right {
+    margin-left: auto;
+}
+
+/* Main Section Styles */
+.main-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff8e1;
+}
+
+.main-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #e67e22;
+}
+
+.btn-secondary {
+    background-color: #d35400;
+}
+
+/* Feature Section Styles */
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #fdf6e3;
+}
+
+.image-container img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.features-list {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.features-list h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.features-list p {
+    font-size: 1.2em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7d68c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-section {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .features-list {
+        width: 100%;
+        flex-direction: column;
+    }
+}
