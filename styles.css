@@ -88,9 +88,8 @@ body {
 
 .features-list {
     display: flex;
-    margin: auto;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: 60px;
 }
 
 .features-list h2 {
