@@ -80,16 +80,22 @@ body {
     background-color: #fdf6e3;
 }
 
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .image-container img {
     width: 30%;
     margin: 10px;
     border-radius: 10px;
+    
 }
 
 .features-list {
     display: flex;
     justify-content: space-between;
-    column-gap: 60px;
+    column-gap: 87px;
 }
 
 .features-list h2 {

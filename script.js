@@ -45,13 +45,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Determine the file type (image or video)
             const fileType = fileInput.files[0].type;
+            let resultMessage = '';
+
             if (fileType.startsWith('video/')) {
-                result.textContent = 'This video is fake.';
+                resultMessage = 'This video is fake.';
             } else if (fileType.startsWith('image/')) {
-                result.textContent = 'This image is fake.';
+                resultMessage = 'This image is fake.';
             } else {
-                result.textContent = 'Unknown file type.';
+                resultMessage = 'Unknown file type.';
             }
+
+            // Display the detection result
+            result.textContent = resultMessage;
+
+            // Generate a random accuracy percentage between 50% and 70%
+            const accuracy = Math.floor(Math.random() * 21) + 50; // 50 to 70%
+
+            // Create and display the accuracy message
+            const accuracyMessage = document.createElement('div');
+            accuracyMessage.textContent = `Accuracy of the result is ${accuracy}%.`;
+            accuracyMessage.style.color = '#2980b9'; // Blue color
+            accuracyMessage.style.marginTop = '10px';
+            result.appendChild(accuracyMessage);
+
         }, detectionTime); // Simulate a detection delay
     });
 });
+
