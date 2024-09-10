@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
         detectionStatus.classList.remove('hidden');
         detectButton.style.display = 'none';
 
-        // Simulate random detection delay (between 15 and 30 seconds)
-        const detectionTime = Math.floor(Math.random() * 15000) + 15000; // 15000ms to 30000ms
+        // Simulate random detection delay (between 5 and 10 seconds)
+        const detectionTime = Math.floor(Math.random() * 5000) + 5000;
 
         setTimeout(() => {
             detectionStatus.classList.add('hidden');
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const accuracy = Math.floor(Math.random() * 21) + 50; // 50 to 70%
 
             // Create and display the accuracy message
-            const accuracyMessage = document.createElement('div');
+            const accuracyMessage = document.createElement('h2');
             accuracyMessage.textContent = `Accuracy of the result is ${accuracy}%.`;
             accuracyMessage.style.color = '#2980b9'; // Blue color
             accuracyMessage.style.marginTop = '10px';
